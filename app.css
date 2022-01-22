@@ -1,0 +1,149 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0 16px;
+}
+
+/* header styling start */
+nav {
+  cursor: pointer;
+  text-align: right;
+}
+
+/* navigation menu's element */
+
+/* menu item's styling start */
+.menu-items {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  position: relative;
+  top: -12px;
+  margin-right: 16px;
+}
+.menu-items:hover {
+  text-decoration: underline;
+  color: #0306c7;
+}
+/* menu item's styling end */
+/* dropdown menu styling*/
+#dropdown-menu {
+  position: relative;
+  top: -5px;
+  margin-right: 10px;
+}
+/* profile pic styling */
+#profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* header styling ends here */
+/* main body styling start here  */
+section {
+  margin-top: 200px;
+  text-align: center;
+}
+
+/* styling search box */
+.input-wrapper {
+  position: relative;
+  width: 582px;
+  margin: 20px;
+  display: inline-block;
+}
+#input-box {
+  width: 100%;
+  color: #222;
+  position: relative;
+  border: 1px solid #dfe1e5;
+  font-size: 13px;
+  padding: 14px;
+  top: -4px;
+  right: 5px;
+  border-radius: 24px;
+}
+
+/* styling search box on hovering */
+#input-box:hover,
+#input-box:focus {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+  outline: none;
+  cursor: text;
+}
+
+/* styling voice icon */
+.input-wrapper > img {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  cursor: pointer;
+  width: 25px;
+}
+
+/* styling buttons */
+#buttons {
+  cursor: pointer;
+  background-color: #e6e3e3;
+  font-size: 14px;
+  height: 36px;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  color: rgb(75, 74, 74);
+}
+
+/* styling buttons on hovering */
+#buttons:hover {
+  background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+/* styling dropdown card */
+#app-dropdown {
+  width: 300px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 80px;
+  background-color: white;
+  /* initially  disappearing card*/
+  display: none;
+}
+
+/* styling dropdown card on hovering */
+#dropdown-wrapper {
+  display: inline-block;
+}
+/* appearing card on hovering */
+#dropdown-wrapper:hover #app-dropdown {
+  display: block;
+}
+
+/* styling app items */
+.app-items {
+  display: inline-block;
+  width: 84px;
+  margin: 2px;
+  padding: 8px 4px;
+  text-align: center;
+}
+.app-items:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.app-items > img {
+  width: 40px;
+  height: 40px;
+}
+.app-items > p {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding-top: 8px;
+}
